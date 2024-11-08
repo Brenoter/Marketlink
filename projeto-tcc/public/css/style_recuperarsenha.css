@@ -1,0 +1,119 @@
+/* Configurar a tipografia */
+body {
+    overflow-x: hidden; /* esconde a barra de rolagem horizontal */
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Alterado para coluna para acomodar a barra superior */
+    height: 100vh;
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+/* Estilização da barra superior com a logo */
+.top-bar {
+    width: 100%;
+    background-color: #0cc0df;
+    padding: 10px 0;
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+    text-align: center; /* Centraliza a logo */
+}
+
+.top-bar img {
+    max-width: 300px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+/* Container principal para alinhamento vertical */
+.container {
+    width: 100vw; /* Define a largura como a largura total da viewport */
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilização do formulário de cadastro */
+.signup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px; /* ou a largura que você preferir */
+    text-align: center;
+}
+
+h2 {
+    color: #0cc0df;
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-top: -55px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Estilização dos campos de entrada e botões */
+input[type="email"], button {
+    width: 80%; /* Ajuste para ocupar toda a largura do container de cadastro */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 50%; /* Ajuste para corresponder à largura dos inputs */
+    margin-top: 2px;
+	align-items: center;
+	justify-content: center; 
+    align-items: center;
+	text-align: center;
+}
+
+#recover {
+    background-color: #0cc0df; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    border: 1px solid #0cc0df; /* Borda azul */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para hover */
+}
+
+#recover:hover {
+    background-color: white; /* Cor de fundo branco ao passar o mouse */
+    color: #0cc0df; /* Cor do texto azul ao passar o mouse */
+}
+
+/* Botão Cancelar */
+#cancel {
+    background-color: white; /* Cor de fundo branco */
+    color: #0cc0df; /* Cor do texto azul */
+    border: 1px solid #0cc0df; /* Borda azul */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para hover */
+}
+
+#cancel:hover {
+    background-color: #0cc0df; /* Cor de fundo azul ao passar o mouse */
+    color: white; /* Cor do texto branco ao passar o mouse */
+}
+
+
+
+::placeholder {
+    color: #ccc;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}

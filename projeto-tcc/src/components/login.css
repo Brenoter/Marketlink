@@ -1,0 +1,152 @@
+/* Configurar a tipografia */
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    align-items: stretch;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-grow: 1; 
+    background-color:#0cc0df ;
+}
+
+.auth-section, .registration-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-section {
+    background-color: #0cc0df;
+    flex: 0 0 40%;
+    color: white;
+}
+
+.registration-section {
+    background-color: rgb(255, 255, 255);
+    flex: 0 0 61%;
+    color: black;
+}
+
+h2 {
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+p {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: black;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 50%;
+    align-items: center;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+
+.auth-section button {
+    background-color: #0cc0df;
+    color: white;
+    border: 1px solid white;
+}
+
+.auth-section button:hover {
+    background-color: white;
+    color: #0cc0df;
+}
+
+.registration-section button {
+    background-color: #0cc0df;
+    color: white;
+}
+
+.registration-section button:hover {
+    background-color: white;
+    color: #0cc0df;
+    border-color: #0cc0df;
+    border: 1px solid #0cc0df;
+}
+
+a {
+    text-decoration: none;
+}
+
+.brand-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.brand-logo img {
+    max-width: 300px;
+    height: auto;
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.password-reminder {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 20px;
+}
+
+#seller-option {
+    margin-bottom: -8px;
+}
+
+.password-reminder a {
+    color: white;
+    font-weight: normal;
+}
+
+.password-reminder a strong {
+    font-weight: bold;
+}
+
+.input-form-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}

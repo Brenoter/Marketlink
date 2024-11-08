@@ -1,0 +1,196 @@
+body {
+    overflow-x: hidden; /* esconde a barra de rolagem horizontal */
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Alterado para coluna para acomodar a barra superior */
+    height: 100vh;
+    align-items: stretch; /* Alterado para 'stretch' para preencher a largura */
+}
+
+.container {
+    display: flex;
+    width: 100vw; /* Define a largura como a largura total da viewport */
+    height: 100vh;
+    flex-grow: 1; 
+    background-color: #ffffff;
+}
+
+h2 {
+    margin-bottom: 7px;
+	font-weight: bold;
+
+}
+
+p {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.logo img {
+    max-width: 200px; /* ou a largura que você deseja */
+    height: auto; /* mantém a proporção da imagem */
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.top-bar {
+    background-color: #0cc0df;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100vw;
+    margin-bottom: 50px;
+}
+
+.logo-container img, .cart-container img {
+    height: 50px; /* Ajuste a altura conforme necessário */
+    
+}
+
+#tab{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.top-bar-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo-container {
+    margin-top: 10px; /* Espaço entre os links e a logo */
+
+}
+
+.logo-container img {
+    max-width: 200px; /* Ajuste conforme necessário */
+    height: auto;
+    margin-left: 25px;
+    margin-bottom: 10px;
+
+}
+
+.shopping-cart-container {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.product-image {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.product-name {
+    flex-grow: 1;
+}
+
+.product-quantity,
+.product-price {
+    margin-left: 10px;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#finalize-purchase {
+    background-color: #0cc0df; /* Cor de fundo azul */
+    color: white; /* Cor do texto branco */
+    border: 1px solid #0cc0df; /* Borda azul */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para hover */
+}
+
+#finalize-purchase:hover {
+    background-color: white; /* Cor de fundo branco ao passar o mouse */
+    color: #0cc0df; /* Cor do texto azul ao passar o mouse */
+}
+
+#continue-shopping {
+    background-color: white; /* Cor de fundo branco */
+    color: #0cc0df; /* Cor do texto azul */
+    border: 1px solid #0cc0df; /* Borda azul */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para hover */
+}
+
+#continue-shopping:hover {
+    background-color: #0cc0df; /* Cor de fundo azul ao passar o mouse */
+    color: white; /* Cor do texto branco ao passar o mouse */
+}
+
+.subtotal span:first-child {
+    font-weight: bold; /* Aplica negrito ao texto "Subtotal" */
+    margin-right: 10px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.subtotal span:last-child {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#meu-carrinho {
+    color: #0cc0df; /* Define a cor do texto para azul */
+    font-weight: bold; /* Aplica negrito ao texto */
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+
